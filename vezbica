@@ -1,0 +1,13 @@
+# vezba3
+def duziZaKraci(prvi,drugi):
+    if len(prvi)>len(drugi):
+        return(prvi[-len(drugi):])
+    elif len(prvi)==len(drugi):
+        print('iste su duzine')
+    else:
+        return (drugi[-len(prvi):])
+
+
+prvi=input('unesite prvi string: ')
+drugi=input('unesite drugi string: ')
+print(duziZaKraci(prvi,drugi))
